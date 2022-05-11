@@ -1,4 +1,4 @@
-This module is used to set up an AWS ECS fargate cluster.
+This module is used to set up an AWS ECS fargate cluster. It sets up an ECS cluster with 1 service.
 
     module "ecsModule" {
     source  = "app.terraform.io/credrails/ecsModule/aws"
