@@ -1,8 +1,8 @@
-This module is used to set up an AWS ECS fargate cluster. It sets up an ECS cluster with 1 service.
+This module is used to set up an AWS ECS fargate cluster. It sets up an ECS cluster with 1 service. To set up an ECS service within an existing cluster, use [this module](https://registry.terraform.io/modules/leroykayanda/ecsService/aws/latest) instead.
 
     module "ecsModule" {
-    source  = "app.terraform.io/credrails/ecsModule/aws"
-    version = "1.0.64"
+    source  = "leroykayanda/ecsModule/aws"
+    version = "1.0.2"
     env = var.env
     region  = var.region
     cluster_name  = "${var.env}-${var.cluster_name}"
